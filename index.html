@@ -29,7 +29,7 @@
         function getRopbinUrlFromVersion(v)
         {
             if (v[0] == "11" && v[1] == "10" && v[4] == "E") {
-                alert("Sorry. We currently do not have a 11.10 ropbin for european systems.");
+                alert("对不起，我们现在没有欧版 11.10 的ropbin。");
                 return "/3ds";
             }
             return "http://smealum.github.io/ninjhax2/JL1Xf2KFVm/r/"+getFilenameFromVersion(v)+".bin";
@@ -86,19 +86,18 @@
     </div>
 
     <div class="content">
-        <span style="color: red">This site is a fork of smealum's official 3DS Homebrew Launcher website. This page will redirect to the official site once smealum added the 11.10 payloads.</span>
+        <span style="color: red">这个站点 fork 了 smealum 的工程，并参考了 deadphoenix8091 的更改。</span>
         
-        Welcome to the <strike>official</strike> unofficial 3DS Homebrew Launcher website ! This page is meant to be a hub between all the best and newest ways to get homebrew running on your system. <br>
-        If you want to see homebrew in action, check out <a href="https://www.youtube.com/watch?v=xryrEpVbCrk">this video</a> !
+        嘿，欢迎来到 <strike>官方</strike> 非官方的 3DS Homebrew Launcher 站点 ! 此页的目的是成为为你的 3DS 启动 Homebrew 程序提供最新及最佳方案的答疑中心。 <br>
     </div>
 
 
 
     <a name="otherapp"></a> 
     <div class="content">
-        <h2>Otherapp/ropbin payloads</h2>
+        <h2>Otherapp/ropbin payload</h2>
         <br>
-        Some exploits (not ninjhax, ironhax or tubehax) might allow you to run the homebrew launcher and require you to get an "otherapp payload" (or a "ropbin payload") to do so. This payload is a binary file specific to your firmware version. You can download your own payload by selecting your firmware version below (only select NEW if you are running this on a New 3DS (XL); regular 3DS, 3DS XL and 2DS owners should select OLD) :
+        有些漏洞 (非 ninjhax, ironhax 或 tubehax)可能允许你通过　“otherapp”（或“ropbin payload”）运行 Homebrew Luancher(简称HBL)来执行破解操作。此文件是一个特定于你主机系统版本的二进制文件。 你可以通过选择下面的系统版本来下载属于你主机版本的 payload 文件（如果你的机子是 New 3DS/New 2DS（XL／LL），则请选择　NEW　后再进行版本选择;老　3DS，3DS XL／LL　和　2DS　应选择OLD） :
         <br>
         <br>
 
@@ -111,18 +110,18 @@
             <select data-id="5" name="four"></select>
             <br>
             <br>
-            <button type="button" onclick="updatePayload()">Download otherapp</button>
-            <button type="button" onclick="updateRopbin()">Download ropbin</button>
+            <button type="button" onclick="updatePayload()">下载 otherapp</button>
+            <button type="button" onclick="updateRopbin()">下载 ropbin</button>
         </form>
 
     </div>
 
 
     <div class="content">
-        <h2>Credits</h2>
+        <h2>贡献</h2>
         <br>
         <p>
-        Most of the code for ninjhax, ironhax and tubehax was written by smea. Everything pertaining to smashbroshax, oot3dhax, browserhax, menuhax and stickerhax was made by yellows8. The vulnerability used for the original homemenuhax was discovered by yellows8 and exploited jointly by yellows8 and smea. supermysterychunkhax and (v*)hax were done entirely by ShinyQuagsire. basicshax and basehaxx were made by mrnbayoh. humblehax is the work of Dazzozo. freakyhax was created by plutoo. In any case a lot of help was provided by the following people : <br/>
+        ninjhax，ironhax 和 tubehax 的大部分代码都是由 smea 编写的。 所有与 smashbroshax，oot3dhax，浏览器破解 ，主题破解 和 stickerhax 有关的东西都是由 yellows8 制作的。 最初主题破解的漏洞是由 yellows8 发现的，并由 yellows8 和 smea 联合进一步开发的。 supermysterychunkhax 和（v*）hax是 由 ShinyQuagsire 独自完成的。 basicshax 和 basehaxx 是由 mrnbayoh 制作的。 humblehax 是Dazzozo 的作品。 freakyhax 是由 plutoo 制作的。 总之，以下人员提供了很多帮助： <br/>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         - yellows8<br/>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -134,24 +133,25 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         - megazig, Bond697<br/>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        - Fluto, Arkhandar (hbmenu design) <br/>
+        - Fluto, Arkhandar (hbmenu 的设计) <br/>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         - Normmatt, ichfly <br/>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        - lobo (webpage template) <br/>
+        - lobo (网页模板) <br/>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        - CUE (compression code) <br/>
+        - CUE (精简代码) <br/>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        - GW (bringing attention to the webkit bug used by tubehax) <br/>
+        - GW (使人们注意到了 tubehax 使用的webkit bug) <br/>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        - derlanalmeida, ThibG (icons on this page) <br/>
-        We'd all also like to thank everyone who has been contributing to the 3DS scene in one way or another, including (but not limited to) :  yuriks, Subv, sm, StapleButter, bunnei, WinterMute, neobrain, and, like, so many other people.
+        - derlanalmeida, ThibG (这个页面的图标) <br/>
+        我们也要感谢所有以某种方式为 3DS 破解做出贡献的人，包括（但不限于） :  yuriks, Subv, sm, StapleButter, bunnei, WinterMute, neobrain, 和像这样的其他人。
         </p>
 
     </div>
 
     <div id="footer" class="container">
-        <p style="color: white;">Follow smea on twitter : <a href="http://twitter.com/smealum">@smealum</a></p>
+        <p style="color: white;">查看 smea 的 twitter : <a href="http://twitter.com/smealum">@smealum</a></p>
     </div>
 </body>
 </html>
+
